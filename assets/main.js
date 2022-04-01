@@ -2,30 +2,30 @@
 
 
 // 1) chiediamo all'utente di inserire la parola
-//let parola = prompt("Inserisci parola");
+let parola = prompt("Inserisci parola");
 
 
 //creiamo la nostra funzione
-// function verifica(parola){
-//     console.log("Una parola palindroma è quella parola che anche se letta in senso opposto restituisce sempre lo stesso risultato");
-//     let parola_divisa = parola.split("");
+ function verifica(parola){
+   console.log("Una parola palindroma è quella parola che anche se letta in senso opposto restituisce sempre lo stesso risultato");
+   let parola_divisa = parola.split("");
     
-//     let parola_invertita = parola_divisa.reverse();
+     let parola_invertita = parola_divisa.reverse();
     
-//     let parolaInvertita= parola_invertita.join("");
+    let parolaInvertita= parola_invertita.join("");
     
-//     if(parolaInvertita == parola){
-//         console.log(`${parola} è una parola palindroma`);
-//     }else{
-//         console.log(`${parola} non è una parola palindroma`);
+    if(parolaInvertita == parola){
+       console.log(`${parola} è una parola palindroma`);
+         }else{
+        console.log(`${parola} non è una parola palindroma`);
         
-//     }
+    }
     
 
-// }
+ }
 
-// //invochiamo la nostra funzione
-// verifica (parola);
+ //invochiamo la nostra funzione
+ verifica (parola);
 
 
 /*
@@ -36,11 +36,51 @@ Stabiliamo se la somma dei due numeri è pari o dispari (usando una funzione)
 Dichiariamo chi ha vinto.
 */
 
-let number_user = parseInt(prompt("Inserisci un numero compreso tra 1 e 5: "));
-if(number_user < 0 || number_user > 5){
-    alert("errore, sei pregato di inserire un numero compreso tra 0 e 5");
+let number_user;
+let boolean = false;
 
-}else{
-    console.log(`Il numero che hai inserito è ${number_user}`);
+while(verifica == false){
+    number_user = parseInt(prompt("Inserisci un numero compreso tra 1 e 5"));
+    if(number_user > 0  && number_user < 6){
+        boolean = true;
+        console.log(`Il giocatore ha scelto il numero: ${number_user}`);
+    }
 }
 
+
+
+let number_npg = Math.floor(Math.random() * 5) +1;
+console.log(`Il pc ha scelto il numero :  ${number_npg}`);
+
+function pari_dispari(number_user, number_npg){
+    if(number_user %2 == 0){
+        console.log("Il giocatore ha scelto un numero pari");
+    }else{
+        console.log("Il giocatore ha scelto un numero dispari");
+    }
+
+    if(number_npg %2 == 0){
+        console.log("Il sistema ha scelto un numero pari");
+
+    }else{
+        console.log("Il sistema ha scelto un numero dispari");
+    }
+    let somma = number_user + number_npg;
+    console.log(somma);
+    if(somma%2==0){
+        console.log("La somma dei numeri è un numero pari");
+    }else{
+        console.log("La somma dei numeri è un numero dispari");
+    }
+
+
+    if(number_user %2 == 0 && somma %2 == 0){
+        console.log("HAI VINTO");
+    }else if(number_user %2 !=0 && somma %2 != 0){
+        console.log("HAI VINTO");
+    }else{
+        console.log("Il computer ha vinto");
+    }
+}
+
+pari_dispari(number_user,number_npg);
