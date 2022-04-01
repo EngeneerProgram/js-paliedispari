@@ -39,7 +39,7 @@ Dichiariamo chi ha vinto.
 let number_user;
 let boolean = false;
 
-while(verifica == false){
+while(boolean == false){
     number_user = parseInt(prompt("Inserisci un numero compreso tra 1 e 5"));
     if(number_user > 0  && number_user < 6){
         boolean = true;
@@ -78,8 +78,10 @@ function pari_dispari(number_user, number_npg){
         console.log("HAI VINTO");
     }else if(number_user %2 !=0 && somma %2 != 0){
         console.log("HAI VINTO");
+    }else if(number_user == number_npg){
+        console.log("patta");
     }else{
-        console.log("Il computer ha vinto");
+        console.log("Ha vinto il computer");
     }
 }
 
