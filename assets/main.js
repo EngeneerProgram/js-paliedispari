@@ -73,16 +73,19 @@ function pari_dispari(number_user, number_npg){
         console.log("La somma dei numeri è un numero dispari");
     }
 
+    if(number_user == number_npg){
+        console.log("Non ha vinto nessuno");
+    }
 
-    if(number_user %2 == 0 && somma %2 == 0){
+    else if(number_user %2 == 0 && somma %2 == 0){
         console.log("HAI VINTO");
     }else if(number_user %2 !=0 && somma %2 != 0){
         console.log("HAI VINTO");
-    }else if(number_user == number_npg){
-        console.log("patta");
     }else{
         console.log("Ha vinto il computer");
     }
+        
+    
 }
 
 pari_dispari(number_user,number_npg);
