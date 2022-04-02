@@ -1,0 +1,141 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(231, 217, 203);
+}
+.btn{
+    padding:7px 20px;
+    border-radius: 10px;
+    cursor:pointer;
+
+}
+
+.welcome{
+    padding-top:20px;
+}
+
+.btn:focus{
+    border:3px solid rgb(54, 56, 54);
+    
+}
+.pari_dispari{
+    width: 600px;
+    height: 780px;
+    border-radius: 10px;
+    margin:8rem auto;
+    box-shadow:  0 0 10px rgb(133, 130, 130);
+    background-color: rgb(221, 228, 230);
+    display:Flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+h1{
+    font-size: 30px;
+}
+
+.list{
+    padding-top: 50px;
+    display:Flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.list > h3{
+    margin-bottom: 30px;
+}
+
+.regole{
+    text-align: center;
+    width: 450px;
+    padding-top:50px;
+    line-height: 30px;
+    font-size: 18px;
+    
+}
+
+.regole > h2{
+    margin:15px;
+}
+.game{
+    padding-top:50px;
+    display:Flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.game_chose{
+    padding-top:25px;
+    width: 250px;
+    
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.giocatori{
+    padding-top:40px;
+    display:Flex;
+    justify-content: space-evenly;
+    width: 300px;
+    align-items: center;
+}
+.user{
+    display:Flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.npg{
+    display:Flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.risultato_user{
+    width: 50px;
+    height: 50px;
+   
+    font-size: 30px;
+    text-align: center;
+}
+
+.risultato_npg{
+    width: 50px;
+    height: 50px;
+    
+    font-size: 30px;
+    text-align: center;
+}
+
+
+.risultato{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sum{
+    display:Flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.somma{
+    padding-top:15px;
+    font-size: 35px;
+}
+
+.vincitore{
+    padding-top:20px;
+}
